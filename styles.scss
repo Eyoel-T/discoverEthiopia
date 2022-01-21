@@ -3,7 +3,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.landing {
+#landing {
   color: white;
   background: rgb(159, 207, 231) url("assets/lalibela.jpg");
   height: 100vh;
@@ -45,7 +45,7 @@
     }
   }
   .hero {
-    height: 80%;
+    height: 76%;
 
     margin-top: 50px;
     text-align: center;
@@ -72,6 +72,7 @@
       padding: 10px;
     }
     .scrollAnimation {
+      display: none;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -96,6 +97,49 @@
           to {
             transform: translatey(20px);
           }
+        }
+      }
+    }
+  }
+}
+#explore {
+  h3 {
+    text-align: center;
+    padding: 60px;
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+  }
+  .listContainer {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-evenly;
+    width: 100%;
+
+    .list {
+      position: relative;
+      img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+      }
+      .heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 250px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+
+        span {
+          background-color: #3a7bfc;
+          padding: 10px;
+          cursor: pointer;
         }
       }
     }

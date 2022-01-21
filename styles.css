@@ -5,7 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.landing {
+#landing {
   color: white;
   background: #9fcfe7 url("assets/lalibela.jpg");
   height: 100vh;
@@ -15,7 +15,7 @@
   background-color: #9e9898;
 }
 
-.landing nav {
+#landing nav {
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,14 +27,14 @@
       align-self: center;
 }
 
-.landing nav .logo {
+#landing nav .logo {
   font-size: 30px;
   margin-left: 40px;
   font-weight: 900;
   margin-top: 10px;
 }
 
-.landing nav .navigation {
+#landing nav .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,7 +45,7 @@
   margin-top: 10px;
 }
 
-.landing nav .navigation span {
+#landing nav .navigation span {
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 2px;
@@ -53,15 +53,15 @@
   cursor: pointer;
 }
 
-.landing nav .navigation .contact {
+#landing nav .navigation .contact {
   background-color: #3a7bfc;
   font-weight: 400;
   letter-spacing: 2px;
   padding: 5px 20px;
 }
 
-.landing .hero {
-  height: 80%;
+#landing .hero {
+  height: 76%;
   margin-top: 50px;
   text-align: center;
   display: -webkit-box;
@@ -78,18 +78,18 @@
           align-items: center;
 }
 
-.landing .hero span:nth-child(1) {
+#landing .hero span:nth-child(1) {
   font-size: 30px;
   font-family: "Playfair Display", serif;
   letter-spacing: 6px;
 }
 
-.landing .hero h1 {
+#landing .hero h1 {
   letter-spacing: 3px;
   font-size: 70px;
 }
 
-.landing .hero span:nth-child(3) {
+#landing .hero span:nth-child(3) {
   width: 15%;
   height: auto;
   background-color: #3a7bfc;
@@ -97,7 +97,8 @@
   padding: 10px;
 }
 
-.landing .hero .scrollAnimation {
+#landing .hero .scrollAnimation {
+  display: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,12 +112,12 @@
   position: relative;
 }
 
-.landing .hero .scrollAnimation .outer {
+#landing .hero .scrollAnimation .outer {
   width: 60px;
   height: 60px;
 }
 
-.landing .hero .scrollAnimation .inner {
+#landing .hero .scrollAnimation .inner {
   width: 25px;
   height: 25px;
   position: absolute;
@@ -141,5 +142,66 @@
     -webkit-transform: translatey(20px);
             transform: translatey(20px);
   }
+}
+
+#explore h3 {
+  text-align: center;
+  padding: 60px;
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+}
+
+#explore .listContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+#explore .listContainer .list {
+  position: relative;
+}
+
+#explore .listContainer .list img {
+  width: 350px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#explore .listContainer .list .heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+#explore .listContainer .list .heading span {
+  background-color: #3a7bfc;
+  padding: 10px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
