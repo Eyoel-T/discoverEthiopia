@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.landing {
+  color: white;
+  background: rgb(159, 207, 231) url("/assets/lalibela.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-color: rgb(158, 152, 152);
+  nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+
+    .logo {
+      font-size: 30px;
+      margin-left: 40px;
+      font-weight: 900;
+      margin-top: 10px;
+    }
+    .navigation {
+      display: flex;
+      margin-right: 60px;
+      align-items: center;
+      margin-top: 10px;
+      span {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin-left: 50px;
+        cursor: pointer;
+      }
+      .contact {
+        background-color: #3a7bfc;
+
+        font-weight: 400;
+        letter-spacing: 2px;
+        padding: 5px 20px;
+      }
+    }
+  }
+  .hero {
+    height: 80%;
+
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    span:nth-child(1) {
+      font-size: 30px;
+      font-family: "Playfair Display", serif;
+      letter-spacing: 6px;
+    }
+
+    h1 {
+      letter-spacing: 3px;
+      font-size: 70px;
+    }
+    span:nth-child(3) {
+      width: 15%;
+      height: auto;
+      background-color: #3a7bfc;
+      letter-spacing: 4px;
+      padding: 10px;
+    }
+    .scrollAnimation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+      .outer {
+        width: 60px;
+        height: 60px;
+      }
+
+      .inner {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 10px;
+
+        animation: scroll 2s ease-in-out infinite;
+        animation-direction: alternate;
+        animation-delay: 2s;
+
+        @keyframes scroll {
+          to {
+            transform: translatey(20px);
+          }
+        }
+      }
+    }
+  }
+}

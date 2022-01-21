@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.landing {
+  color: white;
+  background: #9fcfe7 url("/assets/lalibela.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-color: #9e9898;
+}
+
+.landing nav {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.landing nav .logo {
+  font-size: 30px;
+  margin-left: 40px;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+.landing nav .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.landing nav .navigation span {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.landing nav .navigation .contact {
+  background-color: #3a7bfc;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 5px 20px;
+}
+
+.landing .hero {
+  height: 80%;
+  margin-top: 50px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing .hero span:nth-child(1) {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 6px;
+}
+
+.landing .hero h1 {
+  letter-spacing: 3px;
+  font-size: 70px;
+}
+
+.landing .hero span:nth-child(3) {
+  width: 15%;
+  height: auto;
+  background-color: #3a7bfc;
+  letter-spacing: 4px;
+  padding: 10px;
+}
+
+.landing .hero .scrollAnimation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.landing .hero .scrollAnimation .outer {
+  width: 60px;
+  height: 60px;
+}
+
+.landing .hero .scrollAnimation .inner {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  -webkit-animation: scroll 2s ease-in-out infinite;
+          animation: scroll 2s ease-in-out infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes scroll {
+  to {
+    -webkit-transform: translatey(20px);
+            transform: translatey(20px);
+  }
+}
+
+@keyframes scroll {
+  to {
+    -webkit-transform: translatey(20px);
+            transform: translatey(20px);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
