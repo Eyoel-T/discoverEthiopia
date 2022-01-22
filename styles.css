@@ -3,6 +3,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
   scrollbar-width: none;
 }
 
@@ -59,11 +60,20 @@
 }
 
 #one nav .navigation .contact {
-  background-color: #2092be;
   font-weight: 400;
   letter-spacing: 2px;
   padding: 5px 20px;
   border-radius: 5px;
+  width: 180px;
+  text-align: center;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  background-color: #2092be;
+}
+
+#one nav .navigation .contact:hover {
+  background-color: inherit;
+  border: 2px solid white;
 }
 
 #one .hero {
@@ -102,6 +112,14 @@
   letter-spacing: 4px;
   padding: 10px;
   border-radius: 5px;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+}
+
+#one .hero span:nth-child(3):hover {
+  background-color: inherit;
+  border: 2px solid white;
 }
 
 #one .hero .scrollAnimation {
@@ -174,6 +192,10 @@
 
 #two .listContainer .list {
   position: relative;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
 #two .listContainer .list img {
@@ -181,6 +203,7 @@
   height: 350px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
 }
 
 #two .listContainer .list .heading {
@@ -212,6 +235,21 @@
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
+}
+
+#two .listContainer .list .heading span:hover {
+  background-color: inherit;
+  border: 2px solid white;
+  padding: 8px;
+}
+
+#two .listContainer .list:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#two .listContainer .list:hover img {
+  opacity: 0.9;
 }
 
 #three {
@@ -278,6 +316,16 @@
   padding: 5px 15px;
   cursor: pointer;
   border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
+#three .optionContainer .option span:nth-child(3):hover {
+  background-color: inherit;
+  border: 2px solid white;
+  padding: 3px 15px;
 }
 
 #four {
@@ -364,7 +412,7 @@
   height: 300px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: -20px;
+  margin-top: -10px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -429,7 +477,16 @@
   color: #2092be;
   font-weight: 300;
   margin-bottom: 10px;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   cursor: pointer;
+}
+
+#five .footerContainer .list span:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
 }
 
 #five .copyright {
