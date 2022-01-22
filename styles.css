@@ -63,6 +63,7 @@
   font-weight: 400;
   letter-spacing: 2px;
   padding: 5px 20px;
+  border-radius: 5px;
 }
 
 #one .hero {
@@ -100,6 +101,7 @@
   background-color: #2092be;
   letter-spacing: 4px;
   padding: 10px;
+  border-radius: 5px;
 }
 
 #one .hero .scrollAnimation {
@@ -209,6 +211,7 @@
   background-color: #2092be;
   padding: 10px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 #three {
@@ -274,6 +277,7 @@
   background-color: #2092be;
   padding: 5px 15px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 #four {
@@ -328,5 +332,109 @@
   color: white;
   border: 2px solid white;
   cursor: pointer;
+}
+
+#five {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#five .footerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+#five .footerContainer .listBrand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 300px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: -20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#five .footerContainer .listBrand .brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#five .footerContainer .listBrand .brand img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: -40px;
+}
+
+#five .footerContainer .listBrand .brand h3 {
+  color: #2092be;
+  font-weight: 700;
+  border: none;
+}
+
+#five .footerContainer .listBrand p {
+  color: grey;
+}
+
+#five .footerContainer .listBrand span {
+  color: #2092be;
+}
+
+#five .footerContainer .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 40px;
+}
+
+#five .footerContainer .list h3 {
+  font-weight: 400;
+  border-bottom: 2px solid #2092be;
+  margin-bottom: 20px;
+}
+
+#five .footerContainer .list span {
+  color: #2092be;
+  font-weight: 300;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#five .copyright {
+  text-align: center;
+  padding: 40px;
+  color: grey;
 }
 /*# sourceMappingURL=styles.css.map */
