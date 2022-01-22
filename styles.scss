@@ -1,8 +1,14 @@
+@import "./global.scss";
 * {
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
+
 #one {
   color: white;
   background: rgb(159, 207, 231) url("assets/lalibela.jpg");
@@ -36,7 +42,7 @@
         cursor: pointer;
       }
       .contact {
-        background-color: #3a7bfc;
+        background-color: $blueColor;
 
         font-weight: 400;
         letter-spacing: 2px;
@@ -56,7 +62,7 @@
 
     span:nth-child(1) {
       font-size: 30px;
-      font-family: "Playfair Display", serif;
+      font-family: $secondaryFont;
       letter-spacing: 6px;
     }
 
@@ -67,7 +73,7 @@
     span:nth-child(3) {
       width: 15%;
       height: auto;
-      background-color: #3a7bfc;
+      background-color: $blueColor;
       letter-spacing: 4px;
       padding: 10px;
     }
@@ -106,7 +112,7 @@
   h3 {
     text-align: center;
     padding: 60px;
-    font-family: "Playfair Display", serif;
+    font-family: $secondaryFont;
     font-size: 30px;
   }
   .listContainer {
@@ -137,7 +143,7 @@
         color: white;
 
         span {
-          background-color: #3a7bfc;
+          background-color: $blueColor;
           padding: 10px;
           cursor: pointer;
         }
@@ -147,6 +153,7 @@
 }
 
 #three {
+  height: 500px;
   img {
     width: 100%;
     height: 500px;
@@ -184,10 +191,48 @@
         font-weight: 300;
         font-size: 20px;
         letter-spacing: 6px;
-        background-color: #3a7bfc;
+        background-color: $blueColor;
         padding: 5px 15px;
         cursor: pointer;
       }
+    }
+  }
+}
+
+#four {
+  height: 250px;
+  background-color: $blueColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding: 10px;
+
+  h2 {
+    letter-spacing: 4px;
+  }
+  .bottomText {
+    font-size: 12px;
+  }
+  .subscribe {
+    display: flex;
+    align-items: center;
+    input {
+      padding: 11px;
+      border: none;
+      margin-right: 5px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+    .button {
+      background-color: $blueColor;
+      padding: 10px 25px;
+      color: white;
+      border: 2px solid white;
+      cursor: pointer;
     }
   }
 }
