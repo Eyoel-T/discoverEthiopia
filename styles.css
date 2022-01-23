@@ -11,6 +11,11 @@
   display: none;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 #one {
   color: white;
   background: #9fcfe7 url("assets/lalibela.jpg");
@@ -120,6 +125,7 @@
 #one .hero span:nth-child(3):hover {
   background-color: inherit;
   border: 2px solid white;
+  padding: 8px;
 }
 
 #one .hero .scrollAnimation {

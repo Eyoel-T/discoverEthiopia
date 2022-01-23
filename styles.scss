@@ -10,6 +10,11 @@
   }
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 #one {
   color: white;
   background: rgb(159, 207, 231) url("assets/lalibela.jpg");
@@ -94,6 +99,7 @@
       &:hover {
         background-color: inherit;
         border: 2px solid white;
+        padding: 8px;
       }
     }
     .scrollAnimation {
