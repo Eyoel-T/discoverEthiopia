@@ -23,11 +23,13 @@ a {
   background-repeat: no-repeat;
   background-blend-mode: darken;
   background-color: rgb(158, 152, 152);
+  background-attachment: fixed;
   nav {
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    align-self: center;
+
+    z-index: 999;
 
     .logo {
       font-size: 30px;
@@ -40,15 +42,22 @@ a {
       margin-right: 60px;
       align-items: center;
       margin-top: 10px;
+
       span {
         font-size: 18px;
         font-weight: 300;
         letter-spacing: 2px;
         margin-left: 50px;
-
         cursor: pointer;
+
+        height: 35px;
+
+        &:hover {
+          border-bottom: 2px solid white;
+        }
       }
       .contact {
+        height: auto;
         font-weight: 400;
         letter-spacing: 2px;
         padding: 5px 20px;
@@ -58,6 +67,9 @@ a {
         transition: background-color 0.5s ease;
 
         background-color: $blueColor;
+        a {
+          color: white;
+        }
 
         &:hover {
           background-color: inherit;
@@ -194,6 +206,10 @@ a {
 }
 
 #three {
+  background-image: url("assets/aircraft-547105_1920.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 500px;
   img {
     width: 100%;
@@ -357,7 +373,7 @@ a {
 
   .copyright {
     text-align: center;
-    padding: 40px;
+    padding: 50px;
     color: grey;
   }
 }

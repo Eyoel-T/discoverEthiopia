@@ -1,0 +1,240 @@
+@import "./global.scss";
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#one {
+  nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    background: rgb(159, 207, 231) url("assets/lalibela.jpg");
+
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgb(158, 152, 152);
+
+    .logo {
+      font-size: 30px;
+      margin-left: 40px;
+      font-weight: 900;
+      margin-top: 10px;
+    }
+    .navigation {
+      display: flex;
+      margin-right: 60px;
+      align-items: center;
+      margin-top: 10px;
+
+      span {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin-left: 50px;
+        cursor: pointer;
+
+        height: 35px;
+
+        &:hover {
+          border-bottom: 2px solid white;
+        }
+      }
+      .contact {
+        height: auto;
+        font-weight: 400;
+        letter-spacing: 2px;
+        padding: 5px 20px;
+        border-radius: 5px;
+        width: 180px;
+        text-align: center;
+        transition: background-color 0.5s ease;
+
+        background-color: $blueColor;
+
+        &:hover {
+          background-color: inherit;
+          border: 2px solid white;
+        }
+      }
+    }
+  }
+  .discriptionContainer {
+    padding: 100px;
+    display: flex;
+    color: #a4a4a4;
+    .left {
+      flex: 5;
+      span {
+        font-size: 40px;
+        font-weight: 900;
+        color: #5e6d81;
+      }
+    }
+    .center {
+      flex: 2.5;
+      margin-right: 20px;
+    }
+    .right {
+      flex: 2.5;
+    }
+  }
+}
+
+#two {
+  margin-bottom: 100px;
+  .listContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 20px;
+
+      img {
+        width: 370px;
+        height: 350px;
+        object-fit: cover;
+        margin-bottom: 30px;
+        border-radius: 10px;
+      }
+
+      h3 {
+        color: #5e6d81;
+        font-size: 25px;
+      }
+      span {
+        font-weight: 300;
+        color: #a4a4a4;
+        letter-spacing: 4px;
+      }
+    }
+  }
+}
+#four {
+  height: 250px;
+  background-color: $blueColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding: 10px;
+
+  h2 {
+    letter-spacing: 4px;
+  }
+  .bottomText {
+    font-size: 12px;
+  }
+  .subscribe {
+    display: flex;
+    align-items: center;
+    input {
+      padding: 11px;
+      border: none;
+      margin-right: 5px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+    .button {
+      background-color: $blueColor;
+      padding: 10px 25px;
+      color: white;
+      border: 2px solid white;
+      cursor: pointer;
+    }
+  }
+}
+
+#five {
+  display: flex;
+  flex-direction: column;
+
+  .footerContainer {
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 100px;
+
+    .listBrand {
+      display: flex;
+      flex-direction: column;
+      height: 300px;
+      justify-content: space-around;
+      margin-top: -10px;
+      align-items: flex-start;
+      .brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          width: 120px;
+          height: 120px;
+          object-fit: cover;
+          margin-top: -40px;
+        }
+        h3 {
+          color: $blueColor;
+          font-weight: 700;
+          border: none;
+        }
+      }
+
+      p {
+        color: grey;
+      }
+      span {
+        color: $blueColor;
+      }
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 40px;
+
+      h3 {
+        font-weight: 400;
+        border-bottom: 2px solid $blueColor;
+        margin-bottom: 20px;
+      }
+      span {
+        color: $blueColor;
+        font-weight: 300;
+        margin-bottom: 10px;
+        transition: transform 0.5s ease;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.09);
+        }
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 50px;
+    color: grey;
+  }
+}

@@ -17,17 +17,19 @@ a {
 
 #one {
   color: white;
-  background: rgb(159, 207, 231) url("assets/rift.jpg");
+
   height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
-  background-color: rgb(158, 152, 152);
+
   nav {
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-self: center;
+    background: rgb(159, 207, 231) url("assets/lalibela.jpg");
+
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-color: rgb(158, 152, 152);
 
     .logo {
       font-size: 30px;
@@ -40,15 +42,22 @@ a {
       margin-right: 60px;
       align-items: center;
       margin-top: 10px;
+
       span {
         font-size: 18px;
         font-weight: 300;
         letter-spacing: 2px;
         margin-left: 50px;
-
         cursor: pointer;
+
+        height: 35px;
+
+        &:hover {
+          border-bottom: 2px solid white;
+        }
       }
       .contact {
+        height: auto;
         font-weight: 400;
         letter-spacing: 2px;
         padding: 5px 20px;
@@ -66,7 +75,6 @@ a {
       }
     }
   }
-
   .contactContainer {
     background-color: white;
     width: 80%;
@@ -74,8 +82,6 @@ a {
     margin: 2.5% auto;
     border-radius: 5px;
     display: flex;
-    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
 
     .left {
       flex: 1;

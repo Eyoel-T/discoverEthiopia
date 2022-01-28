@@ -16,17 +16,6 @@ a {
   color: white;
 }
 
-#one {
-  color: white;
-  background: #9fcfe7 url("assets/lalibela.jpg");
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
-  background-color: #9e9898;
-  background-attachment: fixed;
-}
-
 #one nav {
   padding: 20px;
   display: -webkit-box;
@@ -35,7 +24,12 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 999;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background: #9fcfe7 url("assets/lalibela.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-color: #9e9898;
 }
 
 #one nav .logo {
@@ -82,270 +76,93 @@ a {
   background-color: #2092be;
 }
 
-#one nav .navigation .contact a {
-  color: white;
-}
-
 #one nav .navigation .contact:hover {
   background-color: inherit;
   border: 2px solid white;
 }
 
-#one .hero {
-  height: 76%;
-  margin-top: 50px;
-  text-align: center;
+#one .discriptionContainer {
+  padding: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  color: #a4a4a4;
 }
 
-#one .hero span:nth-child(1) {
-  font-size: 30px;
-  font-family: "Playfair Display", serif;
-  letter-spacing: 6px;
+#one .discriptionContainer .left {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
 }
 
-#one .hero h1 {
-  letter-spacing: 3px;
-  font-size: 70px;
+#one .discriptionContainer .left span {
+  font-size: 40px;
+  font-weight: 900;
+  color: #5e6d81;
 }
 
-#one .hero span:nth-child(3) {
-  width: 15%;
-  height: auto;
-  background-color: #2092be;
-  letter-spacing: 4px;
-  padding: 10px;
-  border-radius: 5px;
-  -webkit-transition: background-color 0.5s ease;
-  transition: background-color 0.5s ease;
-  cursor: pointer;
+#one .discriptionContainer .center {
+  -webkit-box-flex: 2.5;
+      -ms-flex: 2.5;
+          flex: 2.5;
+  margin-right: 20px;
 }
 
-#one .hero span:nth-child(3):hover {
-  background-color: inherit;
-  border: 2px solid white;
-  padding: 8px;
+#one .discriptionContainer .right {
+  -webkit-box-flex: 2.5;
+      -ms-flex: 2.5;
+          flex: 2.5;
 }
 
-#one .hero .scrollAnimation {
-  display: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-#one .hero .scrollAnimation .outer {
-  width: 60px;
-  height: 60px;
-}
-
-#one .hero .scrollAnimation .inner {
-  width: 25px;
-  height: 25px;
-  position: absolute;
-  top: 10px;
-  -webkit-animation: scroll 2s ease-in-out infinite;
-          animation: scroll 2s ease-in-out infinite;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-@-webkit-keyframes scroll {
-  to {
-    -webkit-transform: translatey(20px);
-            transform: translatey(20px);
-  }
-}
-
-@keyframes scroll {
-  to {
-    -webkit-transform: translatey(20px);
-            transform: translatey(20px);
-  }
-}
-
-#two h3 {
-  text-align: center;
-  padding: 60px;
-  font-family: "Playfair Display", serif;
-  font-size: 30px;
+#two {
+  margin-bottom: 100px;
 }
 
 #two .listContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 50px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   width: 100%;
-}
-
-#two .listContainer .list {
-  position: relative;
-  -webkit-transition: -webkit-transform 1s ease;
-  transition: -webkit-transform 1s ease;
-  transition: transform 1s ease;
-  transition: transform 1s ease, -webkit-transform 1s ease;
-}
-
-#two .listContainer .list img {
-  width: 350px;
-  height: 350px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 10px;
-}
-
-#two .listContainer .list .heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 250px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-}
-
-#two .listContainer .list .heading span {
-  background-color: #2092be;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-#two .listContainer .list .heading span:hover {
-  background-color: inherit;
-  border: 2px solid white;
-  padding: 8px;
-}
-
-#two .listContainer .list:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-#two .listContainer .list:hover img {
-  opacity: 0.9;
-}
-
-#three {
-  background-image: url("assets/aircraft-547105_1920.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 500px;
-  position: relative;
-}
-
-#three img {
-  width: 100%;
-  height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-#three .optionContainer {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 100%;
-  height: 60%;
-}
-
-#three .optionContainer .option {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#two .listContainer .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
-  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
 }
 
-#three .optionContainer .option span:nth-child(1) {
-  font-style: italic;
-  font-size: 20px;
+#two .listContainer .list img {
+  width: 370px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
 
-#three .optionContainer .option span:nth-child(2) {
-  font-weight: 800;
-  font-size: 40px;
-  letter-spacing: 4px;
+#two .listContainer .list h3 {
+  color: #5e6d81;
+  font-size: 25px;
 }
 
-#three .optionContainer .option span:nth-child(3) {
-  color: white;
+#two .listContainer .list span {
   font-weight: 300;
-  font-size: 20px;
-  letter-spacing: 6px;
-  background-color: #2092be;
-  padding: 5px 15px;
-  cursor: pointer;
-  border-radius: 5px;
-  width: 300px;
-  text-align: center;
-  -webkit-transition: background-color 1s ease;
-  transition: background-color 1s ease;
-}
-
-#three .optionContainer .option span:nth-child(3):hover {
-  background-color: inherit;
-  border: 2px solid white;
-  padding: 3px 15px;
+  color: #a4a4a4;
+  letter-spacing: 4px;
 }
 
 #four {
@@ -514,4 +331,4 @@ a {
   padding: 50px;
   color: grey;
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=aboutUs.css.map */

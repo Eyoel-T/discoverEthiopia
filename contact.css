@@ -18,12 +18,7 @@ a {
 
 #one {
   color: white;
-  background: #9fcfe7 url("assets/rift.jpg");
   height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: darken;
-  background-color: #9e9898;
 }
 
 #one nav {
@@ -36,6 +31,10 @@ a {
           justify-content: space-between;
   -ms-flex-item-align: center;
       align-self: center;
+  background: #9fcfe7 url("assets/lalibela.jpg");
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-color: #9e9898;
 }
 
 #one nav .logo {
@@ -62,9 +61,15 @@ a {
   letter-spacing: 2px;
   margin-left: 50px;
   cursor: pointer;
+  height: 35px;
+}
+
+#one nav .navigation span:hover {
+  border-bottom: 2px solid white;
 }
 
 #one nav .navigation .contact {
+  height: auto;
   font-weight: 400;
   letter-spacing: 2px;
   padding: 5px 20px;
@@ -90,8 +95,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
 }
 
 #one .contactContainer .left {
